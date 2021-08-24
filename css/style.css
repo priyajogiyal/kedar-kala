@@ -744,31 +744,31 @@ a {
         transform: rotate(450deg);
     }
 }
-[data-arts-theme-text="light"] {
+[kedar-kala-theme-text="light"] {
     color: #fff;
 }
-[data-arts-theme-text="light"] .xl {
+[kedar-kala-theme-text="light"] .xl {
     color: var(--xl-color-light);
 }
-[data-arts-theme-text="light"] h1 {
+[kedar-kala-theme-text="light"] h1 {
     color: var(--h1-color-light);
 }
-[data-arts-theme-text="light"] .h2 {
+[kedar-kala-theme-text="light"] .h2 {
     color: var(--h2-color-light);
 }
-[data-arts-theme-text="light"] .h4 {
+[kedar-kala-theme-text="light"] .h4 {
     color: var(--h4-color-light);
 }
-[data-arts-theme-text="light"] .h5 {
+[kedar-kala-theme-text="light"] .h5 {
     color: var(--h5-color-light);
 }
-[data-arts-theme-text="light"] a {
+[kedar-kala-theme-text="light"] a {
     color: var(--color-gray-1);
 }
-[data-arts-theme-text="light"] .circle-button__inner .svg-circle {
+[kedar-kala-theme-text="light"] .circle-button__inner .svg-circle {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-[data-arts-theme-text="light"] .circle-button__inner .circle-button__icon {
+[kedar-kala-theme-text="light"] .circle-button__inner .circle-button__icon {
     fill: #fff;
 }
 .h2,
