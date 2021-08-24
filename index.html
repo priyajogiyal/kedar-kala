@@ -9,67 +9,6 @@
     <meta name="HandheldFriendly" content="true">
     <!-- Google Fonts -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/splitting@1.0.0/dist/splitting.css">
-    
-    <style>
-      /** SPLIT JS VERTICAL SLIDE EFFECT **/
-/******
-****
-*****
-***/
-.slide-vertical .char,
-.slide-horizontal .char {
-  overflow: hidden;
-  color: transparent;
-}
-.slide-vertical .char:before, .slide-vertical .char:after,
-.slide-horizontal .char:before,
-.slide-horizontal .char:after {
-  visibility: visible;
-  color: #888888;
-  transition: transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
-  transition-delay: calc( 0.2s + ( 0.02s * ( var(--char-index)) ) );
-}
-.slide-vertical .char:before,
-.slide-horizontal .char:before {
-  color: #888888;
-  transition-delay: calc( 0.02s * ( var(--char-index)) );
-}
-.slide-vertical:hover .char:before,
-.slide-horizontal:hover .char:before {
-  transition-delay: calc( 0.2s + ( 0.02s * ( var(--char-index)) ) );
-}
-.slide-vertical:hover .char:after,
-.slide-horizontal:hover .char:after {
-  transition-delay: calc( 0.02s * ( var(--char-index)) );
-}
-
-.slide-vertical .char:before {
-  transform: translateY(-100%);
-}
-.slide-vertical:hover .char:before {
-  transform: translateY(0%);
-}
-.slide-vertical:hover .char:after {
-  transform: translateY(100%);
-}
-
-.slide-horizontal .char:before {
-  transform: translateX(110%);
-}
-.slide-horizontal:hover .char:before {
-  transform: translateX(0%);
-}
-.slide-horizontal:hover .char:after {
-  transform: translateX(-110%);
-}
-
-/** SPLIT JS VERTICAL SLIDE EFFECT **/
-/******
-****
-*****
-***/
-    </style>
     <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&display=swap"></noscript>
     <!-- Template Vendor's Stylesheet -->
@@ -247,25 +186,27 @@
           <div class="header__wrapper-menu">
             <ul class="menu-overlay js-menu-overlay">
               <li class="menu-item-has-children"><a class="h2" href="index.html" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text slide-vertical " data-split-text-type="lines" data-splitting>Home
-                </div></a>
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Home</div></a>
+                
               </li>
               <li class="menu-item-has-children"><a class="h2" href="about-us.html" data-pjax-link="overlayMenu">
-                  <div class="menu-overlay__item-wrapper split-text js-split-text slide-vertical" data-splitting data-split-text-type="lines">About Us</div></a>
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About Us</div></a>
                 
               </li>
               <li class="menu-item-has-children"><a class="h2" href="portfolio-listing.html" data-pjax-link="overlayMenu">
-                  <div class="menu-overlay__item-wrapper split-text js-split-text slide-vertical" data-split-text-type="lines" data-splitting>Portfolio</div></a>
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Portfolio</div></a>
+                
               </li>
               <li class="menu-item-has-children"><a class="h2" href="services.html" data-pjax-link="overlayMenu">
-                  <div class="menu-overlay__item-wrapper split-text js-split-text slide-vertical " data-split-text-type="lines" data-splitting>Services</div></a>
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Services</div></a>
+                
               </li>
-
               <li class="menu-item-has-children"><a class="h2" href="blog-listing.html" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text slide-vertical" data-split-text-type="lines" data-splitting>Blog</div></a>
-            </li>
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Blog</div></a>
+                
+              </li>
               <li class="menu-item-has-children"><a class="h2" href="contact-us.html" data-pjax-link="overlayMenu">
-                  <div class="menu-overlay__item-wrapper split-text js-split-text slide-vertical" data-split-text-type="lines" data-splitting>Contact Us</div></a>
+                  <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Contact</div></a>
                 
               </li>
             </ul>
@@ -973,16 +914,16 @@
                   
                   <!-- content -->
                   <ul class="menu js-menu m-center-align">
-                    <li><a href="about-us.html"><span class="slide-vertical small-caps" data-splitting>About</span></a>
-                     </li> 
-                    <li><a href="portfolio-listing.html"><span class="slide-vertical small-caps" data-splitting>Portfolio</span></a>
-                    </li>
-                    <li><a href="services.html"><span class="slide-vertical small-caps" data-splitting>Services</span></a>
-                    </li>
-                    <li><a href="blog-listing.html"><span class="slide-vertical small-caps" data-splitting>Blog</span></a>
-                    </li>
-                    <li><a href="contact-us.html"><span class="slide-vertical small-caps" data-splitting>Contacts</span></a>
-                    </li>
+                    <li><a href="about-us.html">About</a>
+                      </li>
+                      <li><a href="portfolio-listing.html">Portfolio</a>
+                     </li>
+                     <li><a href="services.html">Services</a>
+                     </li>
+                     <li><a href="blog-listing.html">Blog</a>
+                     </li>
+                     <li><a href="contact-us.html">Contacts</a>
+                     </li>
                   </ul>
                   <!-- - content -->
                 </section>
@@ -1285,10 +1226,7 @@
     <script src="js/components.js"></script>
   
     <!-- - COMPONENTS -->
-    <script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js"></script>
-    <script>
-      var s = Splitting();
-    </script>
+   
   </body>
 </html>
 <!-- Localized -->
