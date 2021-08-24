@@ -1254,7 +1254,16 @@
     <!-- - VENDOR SCRIPTS -->
     <!-- COMPONENTS -->
     <script src="js/components.js"></script>
-    
+    <script>
+      const menuAnimations = document.querySelector('.menu.figure-project__content');
+gsap.to(menuAnimations, 1,{
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger:'menuanim',
+        opacity: 1,
+    }
+});
+    </script>
   
     <!-- - COMPONENTS -->
    

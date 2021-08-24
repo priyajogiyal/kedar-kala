@@ -1,13 +1,3 @@
-const menuAnimations = querySelector('.menu.figure-project__content');
-gsap.to(menuAnimations, 1,{
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger:'menuanim',
-        opacity: 1,
-    }
-});
-
-
 
 ! function(e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = e || self).window = e.window || {})
