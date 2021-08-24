@@ -1254,7 +1254,9 @@
     <!-- - VENDOR SCRIPTS -->
     <!-- COMPONENTS -->
     <script src="js/components.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script>
+       gsap.registerPlugin(ScrollTrigger);
       const menuAnimations = document.querySelector('.menu.figure-project__content');
 gsap.to(menuAnimations, 1,{
     ease: "power3.out",
