@@ -3,8 +3,8 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
 <defs>
-<font id="rhye" horiz-adv-x="1000" >
-<font-face font-family="rhye" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<font id="kedar" horiz-adv-x="1000" >
+<font-face font-family="kedar" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="click" unicode="&#xe802;" d="M991 24l-168 169 82 83c8 7 11 18 8 28-2 10-9 17-19 21l-497 165c-11 4-22 1-30-7-8-8-11-19-7-30l165-497c4-10 12-17 21-19 10-3 21 0 28 8l83 83 169-169c5-6 13-9 20-9 8 0 15 3 21 9l124 124c12 11 12 30 0 41z m-145-103l-169 169c-11 11-29 11-41 0l-70-70-132 396 396-132-70-70c-11-11-11-30 0-41l169-169-83-83z m-465 695c16 0 29 13 29 29l0 176c0 16-13 29-29 29-16 0-29-13-29-29l0-176c0-16 13-29 29-29z m-228 122c-11 12-30 12-41 0-12-11-12-29 0-41l124-124c11-12 30-12 41 0 12 11 12 30 0 41l-124 124z m83-372l-124-125c-12-11-12-30 0-41 11-12 30-12 41 0l124 124c12 12 12 30 0 42-11 11-30 11-41 0z m290 207l124 124c12 12 12 30 0 41-11 12-30 12-41 0l-125-124c-11-11-11-30 0-41 12-12 30-12 42 0z m-292-104c0 16-13 29-29 29l-176 0c-16 0-29-13-29-29 0-16 13-29 29-29l176 0c16 0 29 13 29 29z" horiz-adv-x="1000" />
 
