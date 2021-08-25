@@ -1266,3 +1266,9 @@ button::-moz-focus-inner {
     --swiper-navigation-size: 44px;
 }
 
+.menu .figure-project__content .change-text-hover__normal .split-text__line{
+   transform: translate(0px, 0px )!important;
+}
+.menu .figure-project__content .change-text-hover__normal:hover .split-text__line{
+    transform: translate(0px, -10px )!important;
+ }
