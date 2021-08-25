@@ -232,7 +232,7 @@ a {
     opacity: 0;
     visibility: hidden;
 }
-.button__label-hover {
+.buttons-label-hover {
     display: block;
     transform: translateY(0);
     opacity: 1;
@@ -252,7 +252,7 @@ a {
     border-color: #fff;
     color: #fff;
 }
-.button_bordered.button_black {
+.button_bordered.button-black {
     border-color: var(--color-dark-1);
     color: var(--color-dark-1);
 }
