@@ -6030,4 +6030,62 @@
     }
      function t(){$(window).width()>768?$(".parent-div").each(function(){var t=$(this).find(".first").height(),e=$(this).find(".second").height();t>e?$(this).find(".second").css("height",t+"px"):$(this).find(".first").css("height",e+"px")}):($(".first").css("height","auto"),$(".second").css("height","auto"))}
 
+    
+    //viewport 
+     var isInViewport = function (elem) {
+        var bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    const current_sec = $(".section.bg-white");
+    if ((isInViewport && current_sec)){
+        $(".header")[0].removeAttribute("data-arts-header-sticky-logo");
+        $(".header")[0].setAttribute("data-arts-header-sticky-logo", "secondary");
+    }
+    else{
+        $(".header")[1].removeAttribute("data-arts-header-sticky-logo");
+        $(".header")[1].setAttribute("data-arts-header-sticky-logo", "primary");
+    }
+    
+     
+
+     /// gsap animations
+     gsap.registerPlugin(ScrollTrigger);
+     const scrollColorElems = document.querySelectorAll("[data-humcolor]");
+     scrollColorElems.forEach((colorSections, i) => {
+       const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.humcolor;
+     ScrollTrigger.create({
+        trigger: '.section',
+        start: "top 50%",
+        onEnter: () =>
+          gsap.to(".header__burger-line", {
+            backgroundColor: colorSections.dataset.humcolor,
+            overwrite: "auto"
+          }),
+        onLeaveBack: () =>
+          gsap.to(".header__burger-line", {
+            backgroundColor: prevBg,
+            overwrite: "auto"
+          })
+      });
+    });
+
+    ///Menu Animation                   
+    const menuAnimations = document.querySelector('.menu .figure-project__content .split-text__line');
+    let work = gsap.timeline({
+         ease: "power3.out",
+        scrollTrigger: {
+            trigger:'menuanim',
+            Start:"top",
+        },
+    });
+    work.from(menuAnimations,{
+      opacity:1, y:1
+    })
+
+
 })(jQuery);

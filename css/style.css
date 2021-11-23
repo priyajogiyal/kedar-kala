@@ -95,6 +95,10 @@ split-text__line:root {
         --gutter-vertical: 20px;
     }
 }
+.f_copy{
+    text-align:center;
+}
+
 html {
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
