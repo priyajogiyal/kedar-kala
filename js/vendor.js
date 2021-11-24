@@ -32026,7 +32026,7 @@ function(e) {
                             E = n.mousewheel.recentWheelEvents;
                         E.length >= 2 && E.shift();
                         var M = E.length ? E[E.length - 1] : void 0;
-                        if (    E.push(_), M ? (_.direction !== M.direction || _.delta > M.delta || _.time > M.time + 150) && n.mousewheel.animateSlider(_) : n.mousewheel.animateSlider(_), n.mousewheel.releaseScroll(_)) return !0
+                        if (    E.push(_), M ? (_.direction !== M.direction || _.delta > M.delta || _.time > M.time + 150) && n.mousewheel.animateSlider(_) : n.mousewheel.animateSlider(_)) return !0;
                     }
                     return t.preventDefault ? t.preventDefault() : t.returnValue = !1, !1
                 },
