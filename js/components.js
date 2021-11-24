@@ -6059,7 +6059,7 @@
      scrollColorElems.forEach((colorSections, i) => {
        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.humcolor;
      ScrollTrigger.create({
-        trigger: '.section',
+        trigger: '.section.bg-white',
         start: "top 50%",
         onEnter: () =>
           gsap.to(".header__burger-line", {
