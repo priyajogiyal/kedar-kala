@@ -4943,17 +4943,19 @@ body.elementor-editor-active [data-arts-os-animation] {
 
 .section_w-container-right {
 	max-width: 100%;
-	width: calc( 100% - ( (100vw - 1140px) / 2) - 20px);
+	width: calc( 100% - ( (100vw - 1050px) / 2) - 20px);
 	margin-left: auto;
 	text-align: left
 }
 
 .section_w-container-left {
 	max-width: 100%;
-	width: calc( 100% - ( (100vw - 1140px) / 2) - 20px);
+	width: calc( 100% - ( (100vw - 1050px) / 2) - 20px);
 	margin-right: auto;
 	text-align: right
 }
+
+
 
 @media screen and (max-width: 1400px) {
 	.section_w-container-right,
@@ -4961,6 +4963,7 @@ body.elementor-editor-active [data-arts-os-animation] {
 		width: 100%;
 		text-align: center
 	}
+	
 	.section_w-container-right .section-image__caption-vertical-left,
 	.section_w-container-right .section-image__caption-vertical-right,
 	.section_w-container-left .section-image__caption-vertical-left,
@@ -4976,13 +4979,19 @@ body.elementor-editor-active [data-arts-os-animation] {
 		text-align: center;
 		width: 100%
 	}
-	.section_w-container-right .section-image__caption.text-left,
+	/* .section_w-container-right .section-image__caption.text-left,
 	.section_w-container-right .section-image__caption.text-center,
 	.section_w-container-right .section-image__caption.text-right,
 	.section_w-container-left .section-image__caption.text-left,
 	.section_w-container-left .section-image__caption.text-center,
 	.section_w-container-left .section-image__caption.text-right {
 		text-align: center !important
+	} */
+}
+@media screen and (max-width: 1300px){
+	.section_w-container-right,
+	.section_w-container-left{
+		width:90%;
 	}
 }
 
@@ -5013,6 +5022,18 @@ body.elementor-editor-active [data-arts-os-animation] {
 	}
 	.section_h-900 {
 		max-height: 70vh
+	}
+	.section_w-container-right,
+	.section_w-container-left{
+		width:100%;
+	}
+	.section_w-container-right .section-image__caption.text-left,
+	.section_w-container-right .section-image__caption.text-center,
+	.section_w-container-right .section-image__caption.text-right,
+	.section_w-container-left .section-image__caption.text-left,
+	.section_w-container-left .section-image__caption.text-center,
+	.section_w-container-left .section-image__caption.text-right {
+		text-align: center !important
 	}
 }
 
