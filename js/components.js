@@ -6036,35 +6036,35 @@
 
      //======= Custom Code ========//
 
-    $.fn.isInViewport = function () {
-        let elementTop = $(this).offset().top;
-        let elementBottom = elementTop + $(this).outerHeight();
+    // $.fn.isInViewport = function () {
+    //     let elementTop = $(this).offset().top;
+    //     let elementBottom = elementTop + $(this).outerHeight();
     
-        let viewportTop = $(window).scrollTop();
-        let viewportBottom = viewportTop + $(window).height();
+    //     let viewportTop = $(window).scrollTop();
+    //     let viewportBottom = viewportTop + $(window).height();
     
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
+    //     return elementBottom > viewportTop && elementTop < viewportBottom;
+    // };
      
-    $(window).scroll(function () {
-        if ($('.section.bg-white').isInViewport()) {
-            //  Use .blogcard instead of this
-           // $('.section.bg-white').addClass('test');
-            //$(".header")[0].removeAttribute("data-arts-header-sticky-logo");
-            $(".header")[0].setAttribute("data-arts-header-sticky-logo", "primary");
-            console.log('success.')
-        } else {
-            //  Remove class
-            //$('.section.bg-white').removeClass('test');
-            $(".header")[0].removeAttribute("data-arts-header-sticky-logo");
-            $(".header")[0].setAttribute("data-arts-header-sticky-logo", "secondary");
-            console.log('No success.')
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($('.section.bg-white').isInViewport()) {
+    //         //  Use .blogcard instead of this
+    //        // $('.section.bg-white').addClass('test');
+    //         //$(".header")[0].removeAttribute("data-arts-header-sticky-logo");
+    //         $(".header")[0].setAttribute("data-arts-header-sticky-logo", "primary");
+    //         console.log('success.')
+    //     } else {
+    //         //  Remove class
+    //         //$('.section.bg-white').removeClass('test');
+    //         $(".header")[0].removeAttribute("data-arts-header-sticky-logo");
+    //         $(".header")[0].setAttribute("data-arts-header-sticky-logo", "secondary");
+    //         console.log('No success.')
+    //     }
+    // });
      /// gsap animations
      gsap.registerPlugin(ScrollTrigger);
      const scrollColorElems = document.querySelectorAll("[data-humcolor]");
-     if ($('.section.bg-white').isInViewport()) {
+   
      scrollColorElems.forEach((colorSections, i) => {
        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.humcolor;
      ScrollTrigger.create({
@@ -6082,7 +6082,7 @@
           })
       });
     });
-            }  
+        
 
     ///Menu Animation                   
     const menuAnimations = document.querySelector('.menu .figure-project__content .split-text__line');
