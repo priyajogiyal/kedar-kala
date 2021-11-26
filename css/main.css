@@ -11974,3 +11974,10 @@ small,
 	margin-top: 0;
 	margin-bottom: 0
 }
+
+
+
+/*==== Image Custom Gsap Grid =====*/
+.bt-padding{
+	padding-bottom: 120px;
+}

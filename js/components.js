@@ -6062,28 +6062,27 @@
     //     }
     // });
      /// gsap animations
-     gsap.registerPlugin(ScrollTrigger);
-     const scrollColorElems = document.querySelectorAll("[data-humcolor]");
-   
-     scrollColorElems.forEach((colorSections, i) => {
-       const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.humcolor;
-     ScrollTrigger.create({
-        trigger: '.section.bg-white',
-        start: "top 50%",
-        onEnter: () =>
-          gsap.to(".header__burger-line", {
-            backgroundColor: colorSections.dataset.humcolor,
-            overwrite: "auto"
-          }),
-        onLeaveBack: () =>
-          gsap.to(".header__burger-line", {
-            backgroundColor: prevBg,
-            overwrite: "auto"
-          })
-      });
-    });
+     //gsap.registerPlugin(ScrollTrigger);
+     //const scrollColorElems = document.querySelectorAll("[data-humcolor]");
+    //  scrollColorElems.forEach((colorSections, i) => {
+    //    const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.humcolor;
+    //  ScrollTrigger.create({
+    //     trigger: '.section.bg-white',
+    //     start: "top 50%",
+    //     onEnter: () =>
+    //       gsap.to(".header__burger-line", {
+    //         backgroundColor: colorSections.dataset.humcolor,
+    //         overwrite: "auto"
+    //       }),
+    //     onLeaveBack: () =>
+    //       gsap.to(".header__burger-line", {
+    //         backgroundColor: prevBg,
+    //         overwrite: "auto"
+    //       })
+    //   });
+    // });
         
-
+    /// Custom Image Grid 
     ///Menu Animation                   
     const menuAnimations = document.querySelector('.menu .figure-project__content .split-text__line');
     let work = gsap.timeline({
