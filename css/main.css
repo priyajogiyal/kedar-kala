@@ -2954,7 +2954,7 @@ div.wpcf7-acceptance-missing {
 
 .header {
 	pointer-events: none;
-	padding-top: var(--gutter-vertical);
+	padding-top: 20px;
 	padding-bottom: 0
 }
 
@@ -3281,6 +3281,9 @@ div.wpcf7-acceptance-missing {
 
 .header[data-arts-theme-text="light"] .header__burger-line {
 	background-color: #fff
+}
+.header[data-arts-theme-text="dark"] .header__burger-line{
+	background-color: #000
 }
 
 .header.bg-dark-1 .header__burger-line,
@@ -3750,7 +3753,8 @@ div.wpcf7-acceptance-missing {
 	align-items: center;
 	flex: 1 0 auto;
 	height: 100%;
-	margin-right: 15px
+	margin-right: 15px;
+	overflow: hidden;
 }
 
 .logo__wrapper-img img {
@@ -3779,8 +3783,8 @@ div.wpcf7-acceptance-missing {
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0;
-	visibility: hidden
+	/* opacity: 0;
+	visibility: hidden */
 }
 
 .logo__description {
@@ -6456,6 +6460,7 @@ select {
 	position: absolute;
 	bottom: 40px;
 	width: auto;
+	top:63%;
 	padding-left: 0;
 	padding-right: 0;
 	left: var(--gutter-horizontal);
@@ -11980,4 +11985,33 @@ small,
 /*==== Image Custom Gsap Grid =====*/
 .bt-padding{
 	padding-bottom: 120px;
+}
+.testimonial-fig-author{
+font-size: calc(15* 1px);
+font-weight: 700;
+letter-spacing: 2px;
+line-height: 1.3;
+text-transform: uppercase;
+color: var(--color-gray-1);
+}
+
+
+
+.change .header__burger .header__burger-line{
+	background: #000;
+  }
+  .swiper-wrapper{
+	  height:auto;
+  }
+
+  .header__container .navbar--blck  .logo__img-secondary {
+    transform: translate3d(0, 0rem, 0);
+}
+
+.header__container.navbar--white .logo__img-primary {
+    transform: translate3d(0, 0rem, 0);
+}
+
+.header__container .logo__img-primary {
+    transform: translate3d(0, -4em, 0);
 }
