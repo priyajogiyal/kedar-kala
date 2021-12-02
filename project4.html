@@ -141,9 +141,9 @@
       </div>
       <!-- - Cursor Follower-->
       <!-- PAGE HEADER -->
-      <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header" data-arts-theme-text="dark" data-arts-header-logo="secondary" data-arts-header-sticky-logo="secondary">
+      <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header" data-arts-theme-text="dark" >
         <!-- top bar -->
-        <div class="header__container header__controls">
+        <div class="header__container header__controls navbar navbar--white">
           <div class="row justify-content-between align-items-center">
             <!-- logo -->
             <div class="col-auto header__col header__col-left"><a class="logo" href="index.html" >
@@ -151,7 +151,7 @@
                 <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary" src="img/assets/projects/kk-logo-2-w.svg" style="width:120px" alt="RKedar Kala Logo" >
               <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary" src="img/assets/projects/kk-logo-2-b.svg" alt="Kedar Kala Logo" height="20">
               </div></a>
-            </div>
+            </div>  
             <!-- - logo -->
             <!-- burger icon -->
             <div class="col-auto header__col">
@@ -258,7 +258,7 @@
       <div class="js-smooth-scroll bg-white" id="page-wrapper" data-barba="container">
         <main class="page-wrapper__content">
           <!-- section MASTHEAD HALFSCREEN LEFT -->
-          <section class="section section-masthead section-fullheight" data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+          <section id="chanlo" class="section section-masthead section-fullheight" data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)" data-humcolor="#000">
             <div class="section-masthead__inner section-fullheight__inner section-fullheight__inner_mobile-auto">
               <div class="row no-gutters h-100 align-items-center">
                 <div class="col-lg-6 align-self-stretch" data-arts-theme-text="light">
@@ -358,7 +358,7 @@
           </section>
           <!-- - section MASTHEAD HALFSCREEN LEFT -->
           <!-- section CONTENT #1 -->
-          <div class="section pt-medium pb-medium bg-white">
+          <div id="chanlo" class="section pt-medium pb-medium bg-white" data-humcolor="#000">
             <div class="container">
               <div class="row justify-content-between">
                 <div class="col-lg-6">
@@ -399,7 +399,7 @@
           </section>
           <!-- - section IMAGE #1 -->
           <!-- section with color theme change on scroll-->
-          <div class="section-scroll bg-white" data-arts-theme-text="dark" data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-theme-text="light" data-arts-scroll-offset="-200" data-arts-scroll-trigger-hook="0.0">
+          <div id="chanlog" class="section-scroll bg-white" data-arts-theme-text="dark" data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-theme-text="light" data-arts-scroll-offset="-200" data-arts-scroll-trigger-hook="0.0" data-humcolor="#fff">
          
           <!-- section CONTENT #3 -->
           <div class="section pt-medium pb-medium">
@@ -734,7 +734,7 @@
       
       }
       
-    </script>
+    </script> 
     <!-- - Slider Textures Shaders -->
     <!-- VENDOR SCRIPTS -->
     <script src="js/vendor.js"></script>
@@ -743,6 +743,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/headercolor.js"></script>
 
     <!-- - COMPONENTS -->
    

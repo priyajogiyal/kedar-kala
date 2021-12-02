@@ -23,7 +23,7 @@
     <script type="text/javascript">
       // When the window has finished loading create our google map below
       google.maps.event.addDomListener(window, 'load', init);
-  
+      
       function init() {
           // Basic options for a simple Google Map
           // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -177,9 +177,9 @@
       </div>
       <!-- - Cursor Follower-->
       <!-- PAGE HEADER -->
-      <header class="header header_menu-right header_fixed container-fluid  js-header-sticky" id="page-header" data-arts-theme-text="light"  data-arts-header-logo="primary" data-arts-header-sticky-logo="primary" >
+      <header class="header header_menu-right header_fixed container-fluid  js-header-sticky" id="page-header" data-arts-theme-text="light" >
         <!-- top bar -->
-        <div class="header__container header__controls">
+        <div class="header__container header__controls navbar navbar--white"> 
           <div class="row justify-content-between align-items-center">
             <!-- logo -->
             <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
@@ -291,10 +291,10 @@
       </header>
       <!-- - PAGE HEADER -->
       <!-- PAGE MAIN -->
-      <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container">
+      <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container" >
         <main class="page-wrapper__content">
           <!-- section MASTHEAD -->
-          <section class="section section-masthead pt-large pb-medium text-center" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light" data-background-color="var(--color-light-1)">
+          <section id="chanlog" class="section section-masthead pt-large pb-medium text-center" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light" data-background-color="var(--color-light-1)" data-humcolor="#fff">
             <div class="section-masthead__inner container-fluid">
               <header class="row section-masthead__header justify-content-center">
                 <div class="col-lg-8">
@@ -311,8 +311,8 @@
           </section>
           <!-- - section MASTHEAD -->
           <!-- section CONTACTS -->
-          <div class="container-fluid container_px-xs-0">
-            <section class="section section-contacts section-properties content-section" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark">
+          <div  class="container-fluid container_px-xs-0">
+            <section id="chanlo" class="section section-contacts section-properties content-section" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark" data-humcolor="#fff">
               <div class="container-fluid no-gutters">
                 <div class="row no-gutters">
                   <div class="col-lg-auto col-12">
@@ -351,7 +351,7 @@
           </div>
           <!-- - section CONTACTS -->
           <!-- section CONTENT #1 -->
-          <section class="section content-section clearfix pt-medium pb-small text-center" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
+          <section id="chanlog" class="section content-section clearfix pt-medium pb-small text-center" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light" data-humcolor="#fff" > 
             <div class="content-section-inner">
               <div class="w-100"></div>
               <div class="section-underline mb-1 mb-md-2 mx-auto"></div>
@@ -366,7 +366,7 @@
             </div>
           </section>
           <!-- - section CONTENT #1 -->
-          <div class="container container_px-xs-0">
+          <div id="chanlog" class="container container_px-xs-0" data-humcolor="#fff">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- section FORM -->
@@ -421,7 +421,7 @@
           </div>
         </main>
         <!-- PAGE FOOTER -->
-        <footer class="footer container-fluid bg-white" id="page-footer" data-arts-theme-text="dark" data-arts-footer-logo="primary">
+        <footer class="footer container-fluid bg-white" id="page-footer" data-arts-theme-text="dark" data-arts-footer-logo="primary" >
             <!-- widgets top area -->
             <div class="footer-div pt-md-5 pt-sm-3 pb-md-3 pb-sm-1 pt-2 pb-0 footer-border-top">
               <div class="row m-flex-dir">
@@ -698,12 +698,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    
     <script src="js/components.js"></script>
-
+    <script src="js/headercolor.js"></script>
     <!-- - COMPONENTS -->
-    
-   
   </body>
 </html>
 <!-- Localized -->

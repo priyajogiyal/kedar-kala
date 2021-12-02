@@ -265,7 +265,7 @@
           
           <!-- - section MASTHEAD -->
           <!-- section PROJECTS SLIDER FULLSCREEN -->
-          <section id="scroll-to" class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow" data-arts-theme-text="light" data-arts-os-animation data-humcolor="#fff">
+          <section  class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow" data-arts-theme-text="light" data-arts-os-animation data-humcolor="#fff">
             <div class="section-fullheight__inner section-fullheight__inner_mobile text-center">
               <div class="slider slider-fullscreen-projects js-slider-fullscreen-projects js-slider">
                 <!-- slider CONTENT -->
@@ -620,7 +620,7 @@
                <div class="grid js-grid mt-minus-medium">
                 <div class="grid__sizer js-grid__sizer"></div>
                 <!---->
-                <div class="grid__item js-grid__item category-identity pb-3">
+                <div class="grid__item js-grid__item category-hospitality pb-3">
                   <div class="section-grid__item">
                     <!---->
                     <div class="row no-gutters align-items-center figure-project figure-project_no-hover pt-medium d-flex justify-content-center">
@@ -655,7 +655,7 @@
                   </div>
                 </div>
                 <!---->
-                <div class="grid__item js-grid__item category-identity pb-3">
+                <div class="grid__item js-grid__item category-hospitality pb-3">
                   <div class="section-grid__item">
                     <!---->
                     <div class="row no-gutters align-items-center figure-project figure-project_no-hover pt-medium d-flex justify-content-center">
@@ -690,7 +690,7 @@
                   </div>
                 </div>
                 <!---->
-                <div class="grid__item js-grid__item category-branding pb-3">
+                <div class="grid__item js-grid__item category-corporate pb-3">
                   <div class="section-grid__item">
                     <!---->
                     <div class="row no-gutters align-items-center figure-project figure-project_no-hover pt-medium d-flex justify-content-center">
@@ -726,7 +726,7 @@
                   </div>
                 </div>
                 <!---->
-                <div class="grid__item js-grid__item category-ui-ux-design pb-3">
+                <div class="grid__item js-grid__item category-residential pb-3">
                   <div class="section-grid__item">
                     <!---->
                     <div class="row no-gutters align-items-center figure-project figure-project_no-hover pt-medium d-flex justify-content-center">
@@ -767,7 +767,7 @@
           </section>
           
           <!-- - section GRID IRREGULAR 2 -->
-          <div id="chanlog" class="bg-white text-center section-scroll bg-white" id="scroll-to" data-arts-theme-text="dark" data-arts-scroll-theme-text="light" data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-trigger-hook="0.0" data-arts-scroll-offset="-100" data-humcolor="#fff" >
+          <div id="chanlog" class="bg-white text-center section-scroll bg-white" data-arts-theme-text="dark" data-arts-scroll-theme-text="light" data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-trigger-hook="0.0" data-arts-scroll-offset="-100" data-humcolor="#fff" >
              <!-- section CONTENT #1 -->
              <div class="container">
               <div class="row justify-content-center">
@@ -1208,52 +1208,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
     <script src="js/components.js"></script>
-    <script>
-    const scrollColorElems = document.querySelectorAll("[data-humcolor]");
-    scrollColorElems.forEach((colorSections, i) => {
-      const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.humcolor;
-  
-      ScrollTrigger.create({
-        trigger: colorSections,
-        start: "top 50%",
-        onEnter: () =>
-          gsap.to(".header__burger-line ", {
-            backgroundColor: colorSections.dataset.humcolor,
-            overwrite: "auto"
-          }),
-        onLeaveBack: () =>
-          gsap.to(".header__burger-line ", {
-            backgroundColor: prevBg,
-            overwrite: "auto"
-          })
-      });
-    });
-//
-$(window).on('scroll', function() {
-	    $('.header__container').each(function(index, value) {
-            var navToggle = $('#chanlo').offset().top;
-
-            if ($(window).scrollTop() >= navToggle){
-                $('.navbar').removeClass('navbar--white');
-                $('.navbar').addClass('navbar--blck ');
-            } else {
-                $('.navbar').addClass('navbar--white');
-            }
-        });
-
-        $('.header__container').each(function(index, value) {
-            var navToggle = $('#chanlog').offset().top;
-
-            if ($(window).scrollTop() >= navToggle){
-              $('.navbar').addClass('navbar--white');
-                $('.navbar').removeClass('navbar--blck ');
-            } else {
-              $('.navbar').addClass('navbar--blck ');
-            }
-        });
-    });
-   
-    </script>
+    <script src="js/headercolor.js"></script>
+    
 
     <!-- - COMPONENTS -->
    
