@@ -3759,7 +3759,7 @@ div.wpcf7-acceptance-missing {
 
 .logo__wrapper-img img {
 	transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	display: block
+	/* display: block */
 }
 
 .logo__text-title {
@@ -3780,8 +3780,8 @@ div.wpcf7-acceptance-missing {
 }
 
 .logo__img-secondary {
-	position: absolute;
-	top: 0;
+	/* position: absolute;
+	top: 0; */
 	left: 0;
 	/* opacity: 0;
 	visibility: hidden */
@@ -5069,7 +5069,8 @@ body.elementor-editor-active [data-arts-os-animation] {
 	max-width: 420px;
 	height: 420px;
 	margin-bottom: -420px;
-	top: -250px
+	top: -250px;
+	margin:auto;
 }
 
 @media screen and (max-width: 1280px) {
@@ -12000,22 +12001,27 @@ color: var(--color-gray-1);
 .change .header__burger .header__burger-line{
 	background: #000;
   }
-  .swiper-wrapper{
+.swiper-wrapper{
 	  height:auto;
-  }
-
-  .header__container .navbar--blck  .logo__img-secondary {
-    transform: translate3d(0, 0rem, 0);
 }
-
+.header__container .logo__img-primary {
+    transform: translate3d(0, -4em, 0);
+}
 .header__container.navbar--white .logo__img-primary {
     transform: translate3d(0, 0rem, 0);
 }
 
-.header__container .logo__img-primary {
-    transform: translate3d(0, -4em, 0);
+.header__container .logo__img-secondary {
+    transform: translate3d(0, -4rem, 0);
 }
 
+.header__container.navbar--blck  .logo__img-secondary {
+    transform: translate3d(0, 0rem, 0);
+}
+.logo__img-secondary{
+	display: none; 
+	width: 100px;
+}
 .font-15{
 	font-size: 15px;
 }
