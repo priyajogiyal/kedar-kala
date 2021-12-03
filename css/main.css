@@ -5472,7 +5472,7 @@ body.elementor-editor-active [data-arts-os-animation] {
 .section-nav-projects__link {
 	display: block;
 	pointer-events: none;
-	opacity: .2;
+	opacity: .5;
 	color: var(--color-dark-2)
 }
 
@@ -11998,30 +11998,13 @@ color: var(--color-gray-1);
 
 
 
-/* .change .header__burger .header__burger-line{
+.change .header__burger .header__burger-line{
 	background: #000;
-  } */
+  }
 .swiper-wrapper{
 	  height:auto;
 }
-/* .header__container .logo__img-primary {
-    transform: translate3d(0, -4em, 0);
-}
-.header__container.navbar--white .logo__img-primary {
-    transform: translate3d(0, 0rem, 0);
-}
 
-.header__container .logo__img-secondary {
-    transform: translate3d(0, -4rem, 0);
-}
-
-.header__container.navbar--blck  .logo__img-secondary {
-    transform: translate3d(0, 0rem, 0);
-} */
-/* .logo__img-secondary{
-	display: none; 
-	width: 100px;
-} */
 .font-15{
 	font-size: 15px;
 }
