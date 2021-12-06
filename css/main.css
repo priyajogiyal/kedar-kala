@@ -3756,6 +3756,9 @@ div.wpcf7-acceptance-missing {
 	margin-right: 15px;
 	overflow: hidden;
 }
+.logo__wrapper-img1{
+display:flex;
+}
 
 .logo__wrapper-img img {
 	transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
