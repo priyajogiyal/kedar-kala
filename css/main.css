@@ -379,10 +379,13 @@ a:hover {
 	padding-bottom: var(--gutter-horizontal)
 }
 .container{
-	width:1200px;
+	max-width: 1400px;
 }
 
 @media screen and (max-width: 991px) {
+	.container{
+		max-width: 800px;
+	}
 	.container_p-md-0 {
 		padding-top: 0;
 		padding-right: 0;
@@ -408,6 +411,7 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+	
 	.container_p-sm-0 {
 		padding-top: 0;
 		padding-right: 0;
@@ -552,14 +556,36 @@ a:hover {
 .button_fullwidth {
 	width: 100%
 }
+@media screen and (max-width: 1920px) {
+	.container{
+		max-width: 1400px;
+	}
+	
+}
+
 
 @media screen and (max-width: 1680px) {
+	.container{
+		max-width: 1400px;
+	}
 	.button {
 		padding: 14px 32px
 	}
 	.button__label {
 		padding: 18px 32px
 	}
+}
+@media screen and (max-width: 1440px) {
+	.container{
+		max-width: 1200px;
+	}
+	
+}
+@media screen and (max-width: 1200px) {
+	.container{
+		max-width: 1140px;
+	}
+	
 }
 
 @media screen and (max-width: 991px) {
@@ -4967,12 +4993,12 @@ body.elementor-editor-active [data-arts-os-animation] {
 
 
 
-@media screen and (max-width: 1400px) {
-	.section_w-container-right,
+@media screen and (max-width: 1440px) {
+	/* .section_w-container-right,
 	.section_w-container-left {
 		width: 100%;
 		text-align: center
-	}
+	} */
 	
 	.section_w-container-right .section-image__caption-vertical-left,
 	.section_w-container-right .section-image__caption-vertical-right,
@@ -5035,7 +5061,8 @@ body.elementor-editor-active [data-arts-os-animation] {
 	}
 	.section_w-container-right,
 	.section_w-container-left{
-		width:100%;
+		width: 100%;
+		height: auto;
 	}
 	.section_w-container-right .section-image__caption.text-left,
 	.section_w-container-right .section-image__caption.text-center,
@@ -5079,6 +5106,22 @@ body.elementor-editor-active [data-arts-os-animation] {
 	margin:auto;
 }
 
+@media screen and (max-width: 1920px) {
+	.section-about__floating-image {
+		max-width: 300px;
+		height: 300px;
+		margin-bottom: -300px;
+		top: -200px
+	}
+}
+@media screen and (max-width: 1440px) {
+	.section-about__floating-image {
+		max-width: 300px;
+		height: 300px;
+		margin-bottom: -300px;
+		top: -200px
+	}
+}
 @media screen and (max-width: 1280px) {
 	.section-about__floating-image {
 		max-width: 300px;
@@ -5273,7 +5316,7 @@ body.elementor-editor-active [data-arts-os-animation] {
 	}
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
 	.section-demo__content {
 		max-width: 450px
 	}
@@ -5297,7 +5340,7 @@ body.elementor-editor-active [data-arts-os-animation] {
 	}
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
 	.section-demo__bg_wide {
 		max-width: calc(50vw - var(--gutter-horizontal))
 	}
