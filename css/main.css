@@ -1834,7 +1834,8 @@ a:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 	color: var(--color-dark-1);
-	z-index: 50
+	z-index: 50;
+	
 }
 
 .figure-project__category {
@@ -3277,7 +3278,7 @@ div.wpcf7-acceptance-missing {
 	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	/* box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0.1) */
+	box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0.1)
 }
 
 .header_sticky[data-arts-header-sticky-logo="primary"] .logo__img-primary {
@@ -3807,7 +3808,7 @@ display:flex;
 
 .logo__wrapper-img img {
 	transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	display: block
+    display: block;
 }
 
 .logo__text-title {
@@ -3828,11 +3829,11 @@ display:flex;
 }
 
 .logo__img-secondary {
-	/* position: absolute;
-	top: 0; */
+	position: absolute;
+	top: 0;
 	left: 0;
-	/* opacity: 0;
-	visibility: hidden */
+	opacity: 0;
+	visibility: hidden
 }
 
 .logo__description {
@@ -12041,10 +12042,10 @@ small,
 	}
 }
 
-.widget_text .textwidget>p {
+/* .widget_text .textwidget>p {
 	margin-top: 0;
 	margin-bottom: 0
-}
+} */
 
 
 
@@ -12073,6 +12074,10 @@ color: var(--color-gray-1);
 .font-15{
 	font-size: 15px;
 }
+.figure-project__heading.h2{
+	font-size:35px;
+}
+
 
 @media screen and (max-width: 1920px) {
 	.font-15{
@@ -12091,6 +12096,12 @@ color: var(--color-gray-1);
 	.auto-m{
 		margin-right:auto;
 		margin-left:auto;
+	}
+	.figure-project__heading.h2, .testimonial-fig-author, .figure-project__category, .testi-head {
+		text-align:center;
+	}
+	.pro-order{
+		order:2;
 	}
 	
 }
