@@ -1847,11 +1847,11 @@ a:hover {
 }
 
 .figure-project__content.text-right {
-	padding-right: calc(var(--gutter-horizontal) - 20px)
+	padding-right: 0px
 }
 
 .figure-project__content.text-left {
-	padding-left: calc(var(--gutter-horizontal) - 20px)
+	padding-left: 0px
 }
 
 .figure-project__letter {
@@ -12086,20 +12086,42 @@ color: var(--color-gray-1);
 .h-800{
 	height:800px;	
 }
+.lr-magin-bt{
+	margin-bottom: 50px;
+}
 
 @media screen and (max-width: 1920px) {
 	.font-15{
 		font-size: 20px;
+	}
+	.lr-magin-bt {
+		margin-bottom: 250px;
+	}
+}
+@media screen and (max-width: 1680px){
+	.lr-magin-bt {
+		margin-bottom: 80px;
+	}
+}
+@media screen and (max-width: 1440px){
+	.lr-magin-bt {
+		margin-bottom: 70px;
 	}
 }
 @media screen and (max-width: 1350px) {
 	.font-15{
 		font-size: 15px;
 	}
+	.lr-magin-bt {
+		margin-bottom: 50px;
+	}
 }
 @media only screen and (max-width: 991px) and (min-width: 768px){
 	.bt-padding{
 		padding-bottom:50px;
+	}
+	.lr-magin-bt {
+		margin-bottom: 30px;
 	}
 	.auto-m{
 		margin-right:auto;
@@ -12123,6 +12145,9 @@ color: var(--color-gray-1);
 	.bt-padding{
 		padding-bottom:30px;
 	}
+	.lr-magin-bt {
+		margin-bottom: 15px;
+	}
 	.auto-m{
 		margin-right:auto;
 		margin-left:auto;
@@ -12139,6 +12164,9 @@ color: var(--color-gray-1);
 	}
 	.text-left, .text-right{
 		text-align:center!important;
+	}
+	.h-800, .h-700, .h-900{
+		height:auto;
 	}
 	
 }
