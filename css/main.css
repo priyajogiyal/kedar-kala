@@ -1887,6 +1887,14 @@ a:hover {
 	transform: translate(-50%, 50%);
 	z-index: 0
 }
+.figure-project__wrapper-letter-r {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    z-index: 0;
+}
 
 .figure-project__content_absolute {
 	position: absolute;
