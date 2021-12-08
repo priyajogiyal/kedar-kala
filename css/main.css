@@ -3082,7 +3082,7 @@ div.wpcf7-acceptance-missing {
 	height: 2px;
 	background-color: var(--h4-color-light);
 	transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	box-shadow: 2px 2px 3px #999999;
+	box-shadow: 1px 1px 2px #999999;
 }
 
 .header__burger-line:nth-of-type(1) {
