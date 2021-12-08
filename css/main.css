@@ -9,7 +9,7 @@
 	--color-light-2: #f2f1ed;
 	--color-light-3: #f7f6f3;
 	--color-light-4: #f1e9db;
-	--color-gray-1: #888888;
+	--color-gray-1: #999999;
 	--color-gray-2: #cccccc;
 	--xl-max-font-size: 188;
 	--xl-min-font-size: 54;
@@ -12088,6 +12088,10 @@ color: var(--color-gray-1);
 }
 .lr-magin-bt{
 	margin-bottom: 50px;
+}
+
+.logo-size{
+	width:135px;
 }
 
 @media screen and (max-width: 1920px) {
