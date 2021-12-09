@@ -12113,6 +12113,13 @@ color: var(--color-gray-1);
 	.figure-project__heading.h2 {
 		font-size: 50px;
 	}
+	.logo-size {
+		width: 200px;
+	}
+	.header__burger {
+		width: 60px;
+   		height: 45px;
+	}
 }
 @media screen and (max-width: 1680px){
 	.lr-magin-bt {
@@ -12120,6 +12127,13 @@ color: var(--color-gray-1);
 	}
 	.figure-project__heading.h2 {
 		font-size: 35px;
+	}
+	.logo-size {
+		width: 170px;
+	}
+	.header__burger {
+		width: 50px;
+   		height: 43px;
 	}
 }
 @media screen and (max-width: 1440px){
@@ -12130,6 +12144,13 @@ color: var(--color-gray-1);
 @media screen and (max-width: 1370px){
 	.lr-magin-bt {
 		margin-bottom: 70px;
+	}
+	.logo-size {
+		width: 130px;
+	}
+	.header__burger {
+		width: 45px;
+   		height: 38px;
 	}
 }
 @media screen and (max-width: 1280px) {
