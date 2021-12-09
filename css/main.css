@@ -12222,5 +12222,12 @@ color: var(--color-gray-1);
 	.iso-700{
 		height:200px
 	}
+	.logo-size {
+		width: 110px;
+	}
+	.header__burger {
+		width: 35px;
+   		height: 38px;
+	}
 	
 }
