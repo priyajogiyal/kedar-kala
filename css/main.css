@@ -12102,6 +12102,9 @@ color: var(--color-gray-1);
 .logo-size{
 	width:135px;
 }
+.menu_li .small-caps{
+	font-size:12px;
+}
 
 @media screen and (max-width: 1920px) {
 	.font-15{
@@ -12249,11 +12252,19 @@ color: var(--color-gray-1);
 		width: 110px;
 	}
 	.header__burger {
-		width: 35px;
-   		height: 38px;
+		width: 30px;
+		height: 35px;
 	}
 	.a-800{
 		height:700px;
 	}
-	
+	.change-text-hover__line {
+		width:0px
+	}
+	.change-text-hover__hover {
+		left: -5px;
+	}
+	.header__burger{
+		right:5px;
+	}
 }
