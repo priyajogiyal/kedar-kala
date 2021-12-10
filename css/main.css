@@ -12237,7 +12237,8 @@ color: var(--color-gray-1);
 	}
 	.menu-item-has-children  .menu_li-hover1 {
 		font-size:20px;
-		text-align:center
+		right:0;
+		left:0;
 	}
 	.text-left, .text-right{
 		text-align:center!important;
@@ -12262,9 +12263,17 @@ color: var(--color-gray-1);
 		width:0px
 	}
 	.change-text-hover__hover {
-		left: -5px;
+		left: 0;
+		right: 0;
 	}
 	.header__burger{
 		right:5px;
+	}
+	.footer-col .widget_kedar_cta h2{
+		font-size:22px
+	}
+	.change-text-hover.text-right .change-text-hover__hover {
+		left: 0;
+		right: 0;	
 	}
 }
