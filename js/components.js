@@ -6083,6 +6083,15 @@
     // });
         
     /// Custom Image Grid 
+
+    const faviconTag = document.getElementById("faviconTag");
+      const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+      const changeFavicon = () => {
+        if (isDark.matches) faviconTag.href = "/fav-icon-w.png";
+        else faviconTag.href = "/fav-icon-b.png";
+      };
+      changeFavicon();
+      setInterval(changeFavicon, 1000);
     ///Menu Animation                   
     const menuAnimations = document.querySelector('.menu .figure-project__content .split-text__line');
     let work = gsap.timeline({
